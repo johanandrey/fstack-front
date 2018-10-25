@@ -29,6 +29,6 @@ export class LoginPage {
   }
 
   openNavRegisterPage(){
-    this.navCtrl.push(RegisterPage);
+    this.navCtrl.setRoot(RegisterPage);
   }
 }
