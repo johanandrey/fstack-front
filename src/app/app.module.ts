@@ -12,6 +12,8 @@ import { UsuariosPage } from '../pages/usuarios/usuarios';
 import { UsuariosServiceProvider } from '../providers/usuarios-service/usuarios-service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+import { ReportbaPage } from '../pages/reportba/reportba';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     ListPage,
     UsuariosPage,
-    LoginPage
+    LoginPage,
+    RegisterPage,
+    ReportbaPage
   ],
   imports: [
     HttpClientModule,
@@ -32,7 +36,9 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     ListPage,
     UsuariosPage,
-    LoginPage
+    LoginPage,
+    RegisterPage,
+    ReportbaPage
   ],
   providers: [
     StatusBar,

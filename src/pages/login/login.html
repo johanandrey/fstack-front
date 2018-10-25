@@ -28,15 +28,18 @@
               </ion-item>
           
             </ion-list>
+
+            <div padding>
+                <button ion-button color="primary" block (click)="openHomePage()">Ingresar</button>
+            </div>
+            
       </ion-card-content>
 
-      <div padding>
-          <button ion-button color="primary" block (click)="openNavHomePage()">Ingresar</button>
-      </div>
+      
 
       <ion-card-content>
         <p>
-          No Tienes Cuenta
+          ¿No Tienes Cuenta? <a (click)="openNavRegisterPage()">Registrate.</a>
         </p>
       </ion-card-content>
 
