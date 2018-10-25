@@ -27,15 +27,22 @@
       </p>
     </ion-card-content>
     <ion-card-content>
-      <ion-item>
+      <!-- <ion-item>
         <ion-label>¿Tiene Id?</ion-label>
         <ion-checkbox #tieneId color="dark" checked="false" ([ngModel])="tieneIdChecked"></ion-checkbox>
-      </ion-item>
+      </ion-item> -->
 
       <ion-item>
         <ion-input type="text" placeholder="Id"></ion-input>
       </ion-item>
 
+      <ion-item>
+          <ion-textarea rows=4 placeholder="Descripción de la buena acción"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>...Espacio para foto...</ion-label>
+          </ion-item>
 
     </ion-card-content>
 
