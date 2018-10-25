@@ -17,24 +17,26 @@
 
   <ion-card>
     <ion-card-content>
-        <ion-card-title style="text-align: center">
-            ¿Viste a alguien realizando una Buena Acción?
-          </ion-card-title>
-          <p style="text-align: justify">
-            Prémialo reportando su id y contándonos la historia de la buena acción de civismo. 
-            No olvides pedirle su Id, si no tiene uno, cuéntale de nuestra App y repórtalo con 
-            su nombre y apellido.
-          </p>
+      <ion-card-title style="text-align: center">
+        ¿Viste a alguien realizando una Buena Acción?
+      </ion-card-title>
+      <p style="text-align: justify">
+        Prémialo reportando su id y contándonos la historia de la buena acción de civismo.
+        No olvides pedirle su Id, si no tiene uno, cuéntale de nuestra App y repórtalo con
+        su nombre y apellido.
+      </p>
     </ion-card-content>
     <ion-card-content>
-        <ion-item>
-          <ion-label>¿Tiene Id?</ion-label>
-          <ion-checkbox #tieneId color="dark" checked="false"></ion-checkbox>
-        </ion-item>
+      <ion-item>
+        <ion-label>¿Tiene Id?</ion-label>
+        <ion-checkbox #tieneId color="dark" checked="false" ([ngModel])="tieneIdChecked"></ion-checkbox>
+      </ion-item>
 
-        <ion-item>
-            <ion-input type="text" placeholder="Id" *ngIF="tieneId.checked === true"></ion-input>
-          </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Id"></ion-input>
+      </ion-item>
+
+
     </ion-card-content>
 
   </ion-card>

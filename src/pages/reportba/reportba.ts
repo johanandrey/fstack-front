@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -13,13 +13,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-reportba',
   templateUrl: 'reportba.html',
 })
-export class ReportbaPage {
+export class ReportbaPage implements OnInit{
+  tieneIdChecked : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tieneIdChecked = false;
+  }
+
+  ngOnInit(){
+    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReportbaPage');
+    
   }
 
 }
