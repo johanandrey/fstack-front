@@ -14,6 +14,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { ReportbaPage } from '../pages/reportba/reportba';
+import { FormsModule } from '@angular/forms';
+
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { ReportbaPage } from '../pages/reportba/reportba';
     HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,6 +46,7 @@ import { ReportbaPage } from '../pages/reportba/reportba';
   ],
   providers: [
     StatusBar,
+    Camera,
     SplashScreen,
     HttpClient,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
