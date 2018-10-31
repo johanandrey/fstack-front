@@ -17,6 +17,7 @@ import { ReportbaPage } from '../pages/reportba/reportba';
 import { FormsModule } from '@angular/forms';
 
 import { Camera } from '@ionic-native/camera';
+import { HomeIndexPage } from '../pages/home-index/home-index';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Camera } from '@ionic-native/camera';
     UsuariosPage,
     LoginPage,
     RegisterPage,
-    ReportbaPage
+    ReportbaPage,
+    HomeIndexPage
   ],
   imports: [
     HttpClientModule,
@@ -42,7 +44,8 @@ import { Camera } from '@ionic-native/camera';
     UsuariosPage,
     LoginPage,
     RegisterPage,
-    ReportbaPage
+    ReportbaPage,
+    HomeIndexPage
   ],
   providers: [
     StatusBar,

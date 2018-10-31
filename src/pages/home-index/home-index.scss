@@ -1,0 +1,49 @@
+page-home-index {
+
+    .organizacionElementos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 15px;
+    }
+
+    p{
+        text-align: center;
+        margin: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .btnIngresar{
+        background-color: #6465fd;
+        border-radius: 8px;
+        font-size: smaller;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    .btnCrearCuenta{
+        background-color: #01f05e;
+        border-radius: 8px;
+        font-size: smaller;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+}
+
