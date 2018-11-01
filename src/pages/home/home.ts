@@ -5,16 +5,18 @@ import { NavController } from 'ionic-angular';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage implements OnInit{
+export class HomePage{
 
   idUsuario: string;
-
-  ngOnInit() {
-    this.idUsuario = '1002';
-  }
+  puntos: number;
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  ionViewDidLoad() {
+    this.idUsuario = '1002';
+    this.puntos = 700;
   }
 
   

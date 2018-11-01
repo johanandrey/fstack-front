@@ -8,7 +8,26 @@
 </ion-header>
 
 <ion-content padding>
-  <p>Tu Id es: <b>{{ idUsuario }}</b></p>
+  <ion-row>
+    <ion-col col-1 padding>
+        <ion-icon name="information-circle"></ion-icon>
+    </ion-col>
+    <ion-col>
+        <p>Tu Id es: <b>{{ idUsuario }}</b></p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="margin-top: -30px">
+      <ion-col col-1 padding>
+          <ion-icon name="star"></ion-icon>
+      </ion-col>
+      <ion-col>
+          <p>Tienes acumulados <b>{{ puntos }}</b> puntos</p>
+      </ion-col>
+    </ion-row>
+  
+  
+  
 
   <div class="organizacionElementos">
       <img src="../../assets/imgs/logo-full-final.png" class="logo" />

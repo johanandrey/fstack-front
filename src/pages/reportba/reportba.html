@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Reporta una Buena Acción</ion-title>
+    <ion-title>Reporta una BA</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,7 +15,40 @@
 
 <ion-content padding>
 
-  <ion-card>
+  <div class="organizacionElementos">
+    <ion-item padding>
+      <ion-label>Seleccione Id o Teléfono</ion-label>
+      <ion-select [(ngModel)]="tipoId">
+        <ion-option value="id">ID</ion-option>
+        <ion-option value="phone">Teléfono</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item padding>
+      <ion-label>Descripción de la acción</ion-label>
+      <ion-select [(ngModel)]="accion" style="max-width: 100% !important;">
+        <ion-option value="1">Ceder una Silla</ion-option>
+        <ion-option value="2">Prestar un pasaje del SITP</ion-option>
+        <ion-option value="3">Ayudar a cruzar la calle</ion-option>
+        <ion-option value="4">Llamar al respeto en una fila</ion-option>
+        <ion-option value="5">Otra</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <div class="fotoCont">
+            Agregar una imagen (opcional)
+            <button ion-fab icon-only mini class="btnIngreso" (click)="tomarFoto()"> 
+                <ion-icon name="add"></ion-icon>
+              </button>
+        </div>
+    </ion-item>
+    
+    
+    
+  </div>
+
+  <!-- <ion-card>
     <ion-card-content>
       <ion-card-title style="text-align: center">
         ¿Viste a alguien realizando una Buena Acción?
@@ -27,11 +60,7 @@
       </p>
     </ion-card-content>
     <ion-card-content>
-      <!-- <ion-item>
-        <ion-label>¿Tiene Id?</ion-label>
-        <ion-checkbox #tieneId color="dark" checked="false" ([ngModel])="tieneIdChecked"></ion-checkbox>
-      </ion-item> -->
-
+     
       <ion-item>
         <ion-input type="text" placeholder="Id"></ion-input>
       </ion-item>
@@ -46,6 +75,6 @@
 
     </ion-card-content>
 
-  </ion-card>
+  </ion-card> -->
 
 </ion-content>
