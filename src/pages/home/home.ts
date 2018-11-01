@@ -10,7 +10,7 @@ export class HomePage implements OnInit{
   idUsuario: string;
 
   ngOnInit() {
-    this.idUsuario = '3155000000';
+    this.idUsuario = '1002';
   }
 
   constructor(public navCtrl: NavController) {

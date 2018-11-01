@@ -3,41 +3,30 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Inicio</ion-title>
+    <ion-title>Que Buena Onda</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Tu Id es: {{ idUsuario }}</h3>
+  <p>Tu Id es: <b>{{ idUsuario }}</b></p>
 
-  <ion-card>
-    
-      <img src="../../assets/imgs/GoodNeighbor-300x300.jpg" height="250px" style="max-width: 250px; display: flex; justify-content: center;"/>
-        
-    <ion-card-content>
-      <ion-card-title>
-        Bienvenidos a la App que premia las buenas acciones
-      </ion-card-title>
-      <p style="text-align: justify;">
-        Al reportar las buenas acciones de personas y al ser reportado por otros usuario,
-        ganarás puntos, que podrás redimir desde un café, empanada, pasajes del SITP, almuerzos
-        y muchas cosas más en los comercios afiliados. 
-      </p>
-    </ion-card-content>
+  <div class="organizacionElementos">
+      <img src="../../assets/imgs/logo-full-final.png" class="logo" />
 
-    <img src="../../assets/imgs/premios.jpg" />
+      <h4>Bienvenidos a la App que premia las buenas acciones</h4>
 
-    <ion-card-title style="text-align: center;">
-      ¿Qué tal?
-    </ion-card-title>
-
-    
-    
-  </ion-card>
-  <br />
-  <p style="text-align: center;">
-    2018
-  </p>
-
-  <!-- <button ion-button secondary menuToggle>Toggle Menu</button>-->
+      <p>Al reportar las buenas acciones de personas y al ser reportado por otros usuario,
+          ganarás puntos, que podrás redimir desde un café, empanada, pasajes del SITP, almuerzos
+          y muchas cosas más en los comercios afiliados. </p>
+      
+        <ion-card>
+            <img src="../../assets/imgs/premios.jpg" />
+            <ion-card-title style="text-align: center;">
+                ¿Qué tal?
+            </ion-card-title>
+        </ion-card>
+      
+      
+  </div>
+  
 </ion-content>

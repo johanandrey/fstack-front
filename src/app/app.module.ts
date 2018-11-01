@@ -11,13 +11,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { UsuariosPage } from '../pages/usuarios/usuarios';
 import { UsuariosServiceProvider } from '../providers/usuarios-service/usuarios-service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { LoginPage } from '../pages/login/login';
-import { RegisterPage } from '../pages/register/register';
 import { ReportbaPage } from '../pages/reportba/reportba';
 import { FormsModule } from '@angular/forms';
 
 import { Camera } from '@ionic-native/camera';
 import { HomeIndexPage } from '../pages/home-index/home-index';
+import { IngresoPage } from '../pages/ingreso/ingreso';
+import { RegistroPage } from '../pages/registro/registro';
+import { RedimirPage } from '../pages/redimir/redimir';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,11 @@ import { HomeIndexPage } from '../pages/home-index/home-index';
     HomePage,
     ListPage,
     UsuariosPage,
-    LoginPage,
-    RegisterPage,
     ReportbaPage,
-    HomeIndexPage
+    HomeIndexPage,
+    IngresoPage,
+    RegistroPage,
+    RedimirPage
   ],
   imports: [
     HttpClientModule,
@@ -42,10 +44,11 @@ import { HomeIndexPage } from '../pages/home-index/home-index';
     HomePage,
     ListPage,
     UsuariosPage,
-    LoginPage,
-    RegisterPage,
     ReportbaPage,
-    HomeIndexPage
+    HomeIndexPage,
+    IngresoPage,
+    RegistroPage,
+    RedimirPage
   ],
   providers: [
     StatusBar,

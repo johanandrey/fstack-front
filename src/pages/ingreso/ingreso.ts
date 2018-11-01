@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { RegisterPage } from '../register/register';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the IngresoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,23 +11,20 @@ import { RegisterPage } from '../register/register';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-ingreso',
+  templateUrl: 'ingreso.html',
 })
-export class LoginPage {
+export class IngresoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad IngresoPage');
   }
 
-  openHomePage(){
+  openHome(){
     this.navCtrl.setRoot(HomePage);
   }
 
-  openNavRegisterPage(){
-    this.navCtrl.setRoot(RegisterPage);
-  }
 }

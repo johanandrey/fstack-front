@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IngresoPage } from '../ingreso/ingreso';
+import { RegistroPage } from '../registro/registro';
 
 /**
  * Generated class for the HomeIndexPage page.
@@ -20,6 +22,14 @@ export class HomeIndexPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeIndexPage');
+  }
+
+  openIngresoPage(){
+    this.navCtrl.setRoot(IngresoPage);
+  }
+
+  openRegistroPage(){
+    this.navCtrl.setRoot(RegistroPage);
   }
 
 }

@@ -1,4 +1,4 @@
-page-home {
+page-ingreso {
 
     .organizacionElementos{
         display: flex;
@@ -14,16 +14,16 @@ page-home {
         margin-top: 20px;
     }
 
-    h4{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-top: 15px;
-        text-align: center;
+    .formulario{
+        margin-right: 15px;
+        margin-top: 5px; 
+        font-size: 12px;
     }
 
-    p{
-        text-align: justify;
-        margin: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    .btnIngreso{
+        background-color: #6465fd;
+        margin-top: 30px;
+        border-radius: 100%;
     }
+
 }

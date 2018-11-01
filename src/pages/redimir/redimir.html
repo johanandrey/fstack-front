@@ -1,0 +1,38 @@
+<!--
+  Generated template for the RedimirPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Redimir</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="organizacionElementos">
+      <p>Escoge tu merecida recompensa</p>
+
+      <ion-card *ngFor="let negocio of negociosAfiliados">
+          <img src="../../assets/imgs/{{negocio.foto}}" />
+          <ion-row>
+              <ion-col center col-9 padding>
+                  <ion-note>
+                    {{negocio.puntos}} pts
+                  </ion-note>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-only clear small align-self-end>
+                  <ion-icon name="heart"></ion-icon>
+                </button>
+              </ion-col>
+            </ion-row>          
+      </ion-card>
+  </div>
+
+</ion-content>

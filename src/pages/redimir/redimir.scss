@@ -1,0 +1,17 @@
+page-redimir {
+
+    .organizacionElementos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    ion-icon{
+        color: red;
+    }
+
+
+}
