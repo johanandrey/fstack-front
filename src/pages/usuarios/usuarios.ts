@@ -29,9 +29,7 @@ export class UsuariosPage {
   }
 
   obtenerUsuarios() {
-    this.usp.obtenerUsuarios().subscribe((usp) => {
-      this.listadoUsuarios = usp;
-    })
+
   }
 
 }

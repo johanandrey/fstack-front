@@ -16,8 +16,6 @@ export class UsuariosServiceProvider {
 
   obtenerUsuarios() {
     console.log('obtenerUsuario call');
-    return this.http.get('http://localhost:3000/usuarios');
-    //return this.http.post('https://jsonplaceholder.typicode.com/todos/1')
   }
 
 }
