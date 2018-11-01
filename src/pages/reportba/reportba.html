@@ -24,6 +24,11 @@
       </ion-select>
     </ion-item>
 
+    <ion-item>
+        <ion-label>ingresa el número</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
     <ion-item padding>
       <ion-label>Descripción de la acción</ion-label>
       <ion-select [(ngModel)]="accion" style="max-width: 100% !important;">
@@ -49,36 +54,6 @@
   <div style="display: flex; flex-direction: column; align-items: center">
       <img src="../../assets/imgs/logo-full-final.png" class="logo" />   
   </div>
-
-  
-
-  <!-- <ion-card>
-    <ion-card-content>
-      <ion-card-title style="text-align: center">
-        ¿Viste a alguien realizando una Buena Acción?
-      </ion-card-title>
-      <p style="text-align: justify">
-        Prémialo reportando su id y contándonos la historia de la buena acción de civismo.
-        No olvides pedirle su Id, si no tiene uno, cuéntale de nuestra App y repórtalo con
-        su nombre y apellido.
-      </p>
-    </ion-card-content>
-    <ion-card-content>
-     
-      <ion-item>
-        <ion-input type="text" placeholder="Id"></ion-input>
-      </ion-item>
-
-      <ion-item>
-          <ion-textarea rows=4 placeholder="Descripción de la buena acción"></ion-textarea>
-        </ion-item>
-
-        <ion-item>
-            <button ion-button color="primary" block (click)="tomarFoto()">Tomar Foto</button>            
-          </ion-item>
-
-    </ion-card-content>
-
-  </ion-card> -->
+ 
 
 </ion-content>
