@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { LoginServiceProvider } from '../../providers/login-service/login-service';
+import { Credenciales } from './credenciales';
 import { HomePage } from '../home/home';
 
 /**
@@ -15,8 +17,10 @@ import { HomePage } from '../home/home';
   templateUrl: 'ingreso.html',
 })
 export class IngresoPage {
+  email: string;
+  password: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private loginService: LoginServiceProvider, public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -24,7 +28,38 @@ export class IngresoPage {
   }
 
   openHome(){
-    this.navCtrl.setRoot(HomePage);
+    let cred : Credenciales;
+    cred = {
+      email: this.email,
+      password:this.password
+    };
+
+    this.loginService.loguearUsuario(cred).then(res =>{
+      let jwt = res['auth_token'];
+      let user = res['user'];
+      let id = user['id'];
+      
+      this.loginService.obtenerDatosUsuario(jwt, id).then(resp =>{
+        console.log(resp);
+        this.navCtrl.setRoot(HomePage, {id: resp['id'], puntos: resp['available_score'], nombre:resp['name']});
+      })
+
+    }).catch(error =>{
+      console.log('entré al catch',error);
+      this.mostrarMensajeError();
+    });;
+    
+    
+  }
+
+  mostrarMensajeError(){
+    const toast = this.toastCtrl.create({
+      message: 'Las credenciales ingresadas son incorrectas',
+      duration: 5000,
+      position: 'middle',
+      showCloseButton: true
+    });
+    toast.present();
   }
 
 }

@@ -19,6 +19,7 @@ import { HomeIndexPage } from '../pages/home-index/home-index';
 import { IngresoPage } from '../pages/ingreso/ingreso';
 import { RegistroPage } from '../pages/registro/registro';
 import { RedimirPage } from '../pages/redimir/redimir';
+import { LoginServiceProvider } from '../providers/login-service/login-service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { RedimirPage } from '../pages/redimir/redimir';
     SplashScreen,
     HttpClient,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UsuariosServiceProvider
+    UsuariosServiceProvider,
+    LoginServiceProvider
   ]
 })
 export class AppModule {}
