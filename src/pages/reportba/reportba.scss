@@ -1,0 +1,33 @@
+page-reportba {
+
+    .organizacionElementos{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: center;
+        justify-content: center;
+    }
+
+    ion-label, ion-select{
+        font-size: 12px;
+    }
+
+    .fotoCont{        
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        font-size: 12px;
+    }
+
+    .btnIngreso{
+        background-color: #6465fd;
+        margin-top: 30px;
+        border-radius: 100%;
+    }
+
+    .logo{
+        max-width: 130px;
+        margin-top: 20px;
+    }
+
+}

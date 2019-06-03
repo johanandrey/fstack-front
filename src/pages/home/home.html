@@ -3,16 +3,50 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Que Buena Onda</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h5 style="margin-left: 10px;">Hola {{ nombre }},</h5>
+  <ion-row>
+    <ion-col col-1 padding>
+        <ion-icon name="information-circle" style="color:#01f05e;"></ion-icon>
+    </ion-col>
+    <ion-col>
+        <p>Tu Id es: <b>{{ idUsuario }}</b></p>
+    </ion-col>
+  </ion-row>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-row style="margin-top: -30px">
+      <ion-col col-1 padding>
+          <ion-icon name="star" style="color:#6465fd;"></ion-icon>
+      </ion-col>
+      <ion-col>
+          <p>Tienes acumulados <b>{{ puntos }}</b> puntos</p>
+      </ion-col>
+    </ion-row>
+  
+  
+  
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="organizacionElementos">
+      <img src="../../assets/imgs/logo-full-final.png" class="logo" />
+
+      <h4>Bienvenidos a la App que premia las buenas acciones</h4>
+
+      <p>Al reportar las buenas acciones de personas y al ser reportado por otros usuario,
+          ganarás puntos, que podrás redimir desde un café, empanada, pasajes del SITP, almuerzos
+          y muchas cosas más en los comercios afiliados. </p>
+      
+        <ion-card>
+            <img src="../../assets/imgs/premios.jpg" />
+            <ion-card-title style="text-align: center;">
+                ¿Qué tal?
+            </ion-card-title>
+        </ion-card>
+      
+      
+  </div>
+  
 </ion-content>

@@ -1,0 +1,29 @@
+page-ingreso {
+
+    .organizacionElementos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo{
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .formulario{
+        margin-right: 15px;
+        margin-top: 5px; 
+        font-size: 12px;
+    }
+
+    .btnIngreso{
+        background-color: #6465fd;
+        margin-top: 40px;
+        border-radius: 100%;
+    }
+
+}

@@ -1,0 +1,59 @@
+<!--
+  Generated template for the ReportbaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Reporta una BA</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="organizacionElementos">
+    <ion-item padding>
+      <ion-label>Seleccione Id o Teléfono</ion-label>
+      <ion-select [(ngModel)]="tipoId">
+        <ion-option value="id">ID</ion-option>
+        <ion-option value="phone">Teléfono</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>ingresa el número</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+    <ion-item padding>
+      <ion-label>Descripción de la acción</ion-label>
+      <ion-select [(ngModel)]="accion" style="max-width: 100% !important;">
+        <ion-option value="1">Ceder una Silla</ion-option>
+        <ion-option value="2">Prestar un pasaje del SITP</ion-option>
+        <ion-option value="3">Ayudar a cruzar la calle</ion-option>
+        <ion-option value="4">Llamar al respeto en una fila</ion-option>
+        <ion-option value="5">Otra</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <div class="fotoCont">
+            Agregar una imagen (opcional)
+            <button ion-fab icon-only mini class="btnIngreso" (click)="tomarFoto()"> 
+                <ion-icon name="add"></ion-icon>
+              </button>
+        </div>
+    </ion-item>   
+    
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center">
+      <img src="../../assets/imgs/logo-full-final.png" class="logo" />   
+  </div>
+ 
+
+</ion-content>

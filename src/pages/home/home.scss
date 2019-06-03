@@ -1,3 +1,28 @@
 page-home {
 
+    .organizacionElementos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo{
+        max-width: 130px;
+        margin-top: 20px;
+    }
+
+    h4{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
+        margin: 15px;
+        font-size: 12px;
+
+    }
 }
